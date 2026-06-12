@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shipping – The Quiet Horse</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="western-nav">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="sale.html" class="nav-link">Sale</a>
+    <a href="downloads.html" class="nav-link">Downloads</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="cart.html" class="nav-link">Cart</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+
+  <main class="page-wrap">
+    <h1>Shipping</h1>
+    <section class="content-box">
+      <p>Prints are carefully packed to survive the trail between here and your wall.</p>
+      <table>
+        <tr>
+          <th>Region</th>
+          <th>Method</th>
+          <th>Estimated Time</th>
+        </tr>
+        <tr>
+          <td>Domestic (US)</td>
+          <td>Standard mail</td>
+          <td>5–10 business days</td>
+        </tr>
+        <tr>
+          <td>International</td>
+          <td>Varies by destination</td>
+          <td>2–4 weeks</td>
+        </tr>
+      </table>
+      <p>Exact shipping details and tracking will be provided after checkout.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Daniel McKegan Creative Works – The Quiet Horse.</p>
+  </footer>
+
+  <script src="store.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

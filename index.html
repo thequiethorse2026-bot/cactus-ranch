@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Quiet Horse – Western Art Prints</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="saloon-home">
+  <div class="hero-wrap">
+    <nav class="western-nav">
+      <a href="index.html" class="nav-link">Home</a>
+      <a href="gallery.html" class="nav-link">Gallery</a>
+      <a href="sale.html" class="nav-link">Sale</a>
+      <a href="downloads.html" class="nav-link">Downloads</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="cart.html" class="nav-link">Cart</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
 
+    <main class="page-wrap">
+      <section class="hero">
+        <h1>The Quiet Horse</h1>
+        <p class="tagline">Western stories in charcoal, dust, and lantern light.</p>
+        <a href="gallery.html" class="button-primary">View the Gallery</a>
+        <a href="sale.html" class="button-secondary" style="margin-left:0.6rem;">Current Specials</a>
+      </section>
+
+      <section class="home-grid">
+        <div class="content-box">
+          <h2>Prints for the Long Trail</h2>
+          <p>Each piece is a moment from the West — a rider in the storm, a lantern on a barn wall, a last hand of cards before closing time. Prints are made to hang, to keep, and to pass along.</p>
+        </div>
+        <div class="content-box">
+          <h2>Simple, Honest Checkout</h2>
+          <p>Add prints to your cart, then check out through Stripe. No accounts, no fuss — just secure payment and a clear trail from order to delivery.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year"></span> Daniel McKegan Creative Works – The Quiet Horse.</p>
+    </footer>
+  </div>
+
+  <script src="store.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
