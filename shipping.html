@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shipping – The Quiet Horse</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipping Information – Cactus Ranch</title>
+
+    <!-- Main site styles -->
+    <link rel="stylesheet" href="styles.css?v=4">
+
+    <!-- Shipping page styles -->
+    <link rel="stylesheet" href="shipping.css?v=1">
 </head>
+
 <body>
-  <nav class="western-nav">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="gallery.html" class="nav-link">Gallery</a>
-    <a href="sale.html" class="nav-link">Sale</a>
-    <a href="downloads.html" class="nav-link">Downloads</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="cart.html" class="nav-link">Cart</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-  </nav>
 
-  <main class="page-wrap">
-    <h1>Shipping</h1>
-    <section class="content-box">
-      <p>Prints are carefully packed to survive the trail between here and your wall.</p>
-      <table>
-        <tr>
-          <th>Region</th>
-          <th>Method</th>
-          <th>Estimated Time</th>
-        </tr>
-        <tr>
-          <td>Domestic (US)</td>
-          <td>Standard mail</td>
-          <td>5–10 business days</td>
-        </tr>
-        <tr>
-          <td>International</td>
-          <td>Varies by destination</td>
-          <td>2–4 weeks</td>
-        </tr>
-      </table>
-      <p>Exact shipping details and tracking will be provided after checkout.</p>
+    <!-- RANCH GATE HEADER -->
+    <header class="ranch-gate">
+
+        <!-- LEFT POST -->
+        <div class="gate-post left-post"></div>
+
+        <!-- TOP BEAM WITH HANGING NAV -->
+        <div class="gate-beam">
+            <nav class="hanging-nav">
+                <a href="index.html" class="hang-plank">Home</a>
+                <a href="gallery.html" class="hang-plank">Gallery</a>
+                <a href="books.html" class="hang-plank">Books</a>
+                <a href="sale.html" class="hang-plank">Store</a>
+                <a href="contact.html" class="hang-plank">Contact</a>
+            </nav>
+        </div>
+
+        <!-- RIGHT POST -->
+        <div class="gate-post right-post"></div>
+
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="welcome">
+        <h2>Shipping Information</h2>
+        <p>Everything you need to know about how your Western art and books make their way from the ranch to your doorstep.</p>
     </section>
-  </main>
 
-  <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Daniel McKegan Creative Works – The Quiet Horse.</p>
-  </footer>
+    <!-- SHIPPING CONTENT -->
+    <section class="shipping-container">
 
-  <script src="store.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
+        <div class="shipping-box">
+            <h3>Processing Time</h3>
+            <p>Orders are typically processed within 3–5 business days. Each print is inspected and packaged with care to ensure it arrives in perfect condition.</p>
+        </div>
+
+        <div class="shipping-box">
+            <h3>Shipping Methods</h3>
+            <p>All orders are shipped via USPS or UPS, depending on destination and package size. Tracking information is provided for every order.</p>
+        </div>
+
+        <div class="shipping-box">
+            <h3>Domestic Shipping</h3>
+            <p>Most U.S. orders arrive within 5–10 business days after processing. Rural areas may take slightly longer.</p>
+        </div>
+
+        <div class="shipping-box">
+            <h3>International Shipping</h3>
+            <p>International shipping is available. Delivery times vary by country and may take 2–4 weeks depending on customs processing.</p>
+        </div>
+
+        <div class="shipping-box">
+            <h3>Packaging</h3>
+            <p>Art prints are shipped flat in protective rigid mailers. Books are shipped in padded envelopes or sturdy boxes depending on quantity.</p>
+        </div>
+
+        <div class="shipping-box">
+            <h3>Lost or Damaged Orders</h3>
+            <p>If your order arrives damaged or does not arrive at all, contact me at <strong>thequiethorse2026@gmail.com</strong> and I’ll make it right.</p>
+        </div>
+
+        <div class="shipping-box">
+            <h3>Returns & Refunds</h3>
+            <p>Returns are accepted within 14 days of delivery for unused, undamaged items. Contact me to begin the process.</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Cactus Ranch – Western Art & Stories</p>
+    </footer>
+
 </body>
 </html>
