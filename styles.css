@@ -1,4 +1,23 @@
-/* HERO BACKGROUND — version locked */
+/* ============================
+   GLOBAL BASE STYLES
+   ============================ */
+
+body {
+    margin: 0;
+    background: #fdf7ef;
+    color: #2b1a10;
+    font-family: Georgia, serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* ============================
+   HERO SECTION (HOME PAGE)
+   ============================ */
+
 .hero {
     background-image: url('images/dm-ranch-entrance.jpg?v=2');
     background-size: cover;
@@ -10,7 +29,7 @@
     align-items: center;
 }
 
-/* TOP SIGN */
+/* Top Sign */
 .top-sign {
     background: rgba(60, 40, 20, 0.85);
     padding: 20px 40px;
@@ -19,7 +38,6 @@
     margin-top: 20px;
     text-align: center;
     color: #f5e6c8;
-    font-family: Georgia, serif;
     text-shadow: 2px 2px 4px #000;
 }
 
@@ -33,7 +51,10 @@
     margin: 5px 0 0 0;
 }
 
-/* HANGING PLANK NAVIGATION */
+/* ============================
+   HANGING PLANK NAVIGATION
+   ============================ */
+
 .plank-nav {
     display: flex;
     justify-content: space-between;
@@ -41,16 +62,13 @@
     margin-top: 40px;
 }
 
-/* PLANK BUTTONS — no hero.jpg */
 .plank {
-    background: #5a3a1e; /* wood‑brown */
+    background: #5a3a1e; /* wood brown */
     padding: 20px 40px;
     border: 3px solid #3a2a1a;
     border-radius: 6px;
-    text-decoration: none;
     color: #f5e6c8;
     font-size: 1.5rem;
-    font-family: Georgia, serif;
     text-shadow: 2px 2px 4px #000;
     position: relative;
     transition: transform 0.2s ease-in-out;
@@ -76,12 +94,13 @@
     transform: rotate(-2deg) scale(1.05);
 }
 
-/* WELCOME SECTION */
+/* ============================
+   WELCOME SECTION
+   ============================ */
+
 .welcome {
     padding: 40px;
-    background: #fdf7ef;
     text-align: center;
-    font-family: Georgia, serif;
 }
 
 .welcome h2 {
@@ -94,7 +113,11 @@
     max-width: 800px;
     margin: auto;
 }
-/* Subpage header */
+
+/* ============================
+   SUBPAGE HEADER (Gallery, Books, Store, Contact)
+   ============================ */
+
 .subpage-header {
     text-align: center;
     padding: 40px 20px;
@@ -120,7 +143,6 @@
 .sub-nav a {
     margin: 0 15px;
     color: #3a2a1a;
-    text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
 }
@@ -129,7 +151,10 @@
     text-decoration: underline;
 }
 
-/* Gallery grid */
+/* ============================
+   GALLERY GRID
+   ============================ */
+
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -137,7 +162,6 @@
     padding: 40px;
 }
 
-/* Artwork cards */
 .art-card {
     background: #fff;
     border: 3px solid #3a2a1a;
@@ -155,4 +179,16 @@
 .art-card h3 {
     margin-top: 10px;
     font-size: 1.2rem;
+}
+
+/* ============================
+   FOOTER (Optional Future Use)
+   ============================ */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #3a2a1a;
+    color: #f5e6c8;
+    margin-top: 40px;
 }
