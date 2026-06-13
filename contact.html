@@ -3,68 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – Cactus Ranch Gallery</title>
+    <title>Contact – Cactus Ranch</title>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Contact – Cactus Ranch Gallery">
-    <meta property="og:description" content="Get in touch with Western author and artist Daniel McKegan.">
-    <meta property="og:image" content="images/banner2.jpg">
-    <meta property="og:type" content="website">
+    <!-- Main site styles -->
+    <link rel="stylesheet" href="styles.css?v=4">
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Contact page styles -->
+    <link rel="stylesheet" href="contact.css?v=1">
 </head>
 
 <body>
 
-<header class="nav-header">
-    <nav class="nav-bar">
-        <a href="index.html" class="nav-link">🤠 Home</a>
-        <a href="books.html" class="nav-link">📘 Books</a>
-        <a href="gallery.html" class="nav-link">🖼️ Gallery</a>
-        <a href="downloads.html" class="nav-link">⬇️ Downloads</a>
-        <a href="about.html" class="nav-link">👤 About</a>
-        <a href="contact.html" class="nav-link active">✉️ Contact</a>
-    </nav>
-</header>
+    <!-- RANCH GATE HEADER -->
+    <header class="ranch-gate">
 
-<div class="banner-wrapper">
-    <img src="images/banner2.jpg" alt="Frontier Banner" class="hero-image">
-    <div class="banner-title">CACTUS RANCH GALLERY</div>
-    <div class="banner-subtitle">by Daniel McKegan</div>
-</div>
+        <!-- LEFT POST -->
+        <div class="gate-post left-post"></div>
 
-<main class="contact-page">
+        <!-- TOP BEAM WITH HANGING NAV -->
+        <div class="gate-beam">
+            <nav class="hanging-nav">
+                <a href="index.html" class="hang-plank">Home</a>
+                <a href="gallery.html" class="hang-plank">Gallery</a>
+                <a href="books.html" class="hang-plank">Books</a>
+                <a href="sale.html" class="hang-plank">Store</a>
+            </nav>
+        </div>
 
-    <section class="contact-section">
-        <h1>Get in Touch</h1>
-        <p>
-            Whether you’ve got a question about my books, artwork, commissions, or anything else from the frontier, you can reach me anytime. I do my best to reply within <strong>24–48 hours</strong>.
-        </p>
+        <!-- RIGHT POST -->
+        <div class="gate-post right-post"></div>
 
-        <h2>Email</h2>
-        <p class="contact-email">thequiethorse2026@gmail.com</p>
+    </header>
 
-        <h2>Send a Message</h2>
-        <form class="contact-form">
-            <label>Your Name</label>
-            <input type="text" placeholder="Your name">
-
-            <label>Your Email</label>
-            <input type="email" placeholder="your-email@example.com">
-
-            <label>Your Message</label>
-            <textarea rows="6" placeholder="Write your message here..."></textarea>
-
-            <button class="btn" type="submit">Send Message</button>
-        </form>
+    <!-- PAGE HEADER -->
+    <section class="welcome">
+        <h2>Contact the Cactus Ranch</h2>
+        <p>Have a question, commission request, or message for Daniel McKegan?  
+        Reach out anytime — the ranch gate is always open.</p>
     </section>
 
-</main>
+    <!-- CONTACT FORM -->
+    <section class="contact-container">
 
-<footer>
-    <div class="rope-line"></div>
-    <p>🤠 © 2026 Cactus Ranch Gallery • Stories & Art by Daniel McKegan 🤠</p>
-</footer>
+        <div class="contact-box">
+            <h3>Send a Message</h3>
+
+            <form action="https://formspree.io/f/mwkggkqg" method="POST">
+
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+
+        <div class="contact-info">
+            <h3>Direct Email</h3>
+            <p>You can also reach Daniel directly at:</p>
+
+            <p class="email-display">thequiethorse2026@gmail.com</p>
+
+            <h3>Business Hours</h3>
+            <p>Monday – Friday<br>9 AM – 5 PM (Central Time)</p>
+
+            <h3>Social</h3>
+            <p>Coming soon — Western art updates, book releases, and more.</p>
+        </div>
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Cactus Ranch – Western Art & Stories</p>
+    </footer>
 
 </body>
 </html>
