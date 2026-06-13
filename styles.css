@@ -15,83 +15,100 @@ a {
 }
 
 /* ============================
-   HERO SECTION
+   RANCH GATE STRUCTURE
    ============================ */
 
-.hero {
-    background-image: url('images/dm-ranch-entrance.jpg?v=2');
-    background-size: cover;
-    background-position: center;
-    height: 90vh;
+.ranch-gate {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Top Sign */
-.top-sign {
-    background: rgba(60, 40, 20, 0.85);
-    padding: 20px 40px;
-    border: 4px solid #3a2a1a;
-    border-radius: 8px;
-    margin-top: 20px;
-    text-align: center;
-    color: #f5e6c8;
-    text-shadow: 2px 2px 4px #000;
-}
-
-.top-sign h1 {
-    font-size: 3rem;
-    margin: 0;
-}
-
-.top-sign h2 {
-    font-size: 1.4rem;
-    margin: 5px 0 0 0;
-}
-
-/* ============================
-   HANGING PLANK NAVIGATION
-   ============================ */
-
-.plank-nav {
+    width: 100%;
+    height: 220px;
     display: flex;
     justify-content: space-between;
-    width: 80%;
-    margin-top: 40px;
+    align-items: flex-start;
+    z-index: 10;
 }
 
-.plank {
+/* Rough-cut rustic posts */
+.gate-post {
+    width: 90px;
+    height: 100%;
+    background-image: url('images/rough-post.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #3a2a1a;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.left-post { margin-left: 20px; }
+.right-post { margin-right: 20px; }
+
+/* Rough-cut top beam */
+.gate-beam {
+    position: absolute;
+    top: 0;
+    left: 110px;
+    right: 110px;
+    height: 90px;
+    background-image: url('images/rough-beam.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 4px solid #3a2a1a;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-bottom: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+/* Hanging planks */
+.hanging-nav {
+    display: flex;
+    gap: 40px;
+}
+
+.hang-plank {
     background: #5a3a1e;
-    padding: 20px 40px;
+    padding: 18px 40px;
     border: 3px solid #3a2a1a;
     border-radius: 6px;
     color: #f5e6c8;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     text-shadow: 2px 2px 4px #000;
     position: relative;
     transition: transform 0.2s ease-in-out;
 }
 
 /* Rope ties */
-.plank::before,
-.plank::after {
+.hang-plank::before,
+.hang-plank::after {
     content: "";
     width: 4px;
-    height: 25px;
+    height: 30px;
     background: #d2b48c;
     position: absolute;
-    top: -25px;
+    top: -30px;
     border-radius: 2px;
 }
 
-.plank::before { left: 20px; }
-.plank::after { right: 20px; }
+.hang-plank::before { left: 20px; }
+.hang-plank::after { right: 20px; }
 
-/* Hover sway */
-.plank:hover {
-    transform: rotate(-2deg) scale(1.05);
+/* Western sway */
+.hang-plank:hover {
+    transform: rotate(-3deg) scale(1.05);
+}
+
+/* ============================
+   HERO IMAGE
+   ============================ */
+
+.hero {
+    height: 70vh;
+    background-image: url('images/dm-ranch-entrance.jpg?v=3');
+    background-size: cover;
+    background-position: center;
+    margin-top: -40px; /* pulls hero up under the beam */
+    z-index: 1;
 }
 
 /* ============================
@@ -115,7 +132,7 @@ a {
 }
 
 /* ============================
-   CALL‑TO‑ACTION BUTTON
+   CTA BUTTON
    ============================ */
 
 .cta-section {
@@ -131,7 +148,6 @@ a {
     border: 4px solid #3a2a1a;
     border-radius: 8px;
     text-shadow: 2px 2px 4px #000;
-    font-family: Georgia, serif;
     transition: transform 0.2s ease-in-out, background 0.2s;
     display: inline-block;
 }
@@ -144,4 +160,13 @@ a {
 .cta-button .icon {
     margin-right: 10px;
     font-size: 1.8rem;
+}
+
+/* ============================
+   UNIVERSAL PAGE SPACING
+   ============================ */
+
+section {
+    padding-left: 20px;
+    padding-right: 20px;
 }
