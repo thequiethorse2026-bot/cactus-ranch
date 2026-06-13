@@ -3,85 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Art Print – The Quiet Horse</title>
+    <title>Product Details – Cactus Ranch</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Main site styles -->
+    <link rel="stylesheet" href="styles.css?v=4">
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Western Art Print – The Quiet Horse">
-    <meta property="og:description" content="High‑quality Western art print — charcoal, pencil, and long‑shadow grit.">
-    <meta property="og:image" content="https://thequiethorse2026-bot.github.io/cactus-ranch/images/og-preview.jpg">
-    <meta property="og:url" content="https://thequiethorse2026-bot.github.io/cactus-ranch/product.html">
-    <meta property="og:type" content="product">
-
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Western Art Print – The Quiet Horse">
-    <meta name="twitter:description" content="High‑quality Western art print — charcoal, pencil, and long‑shadow grit.">
-    <meta name="twitter:image" content="https://thequiethorse2026-bot.github.io/cactus-ranch/images/og-preview.jpg">
-
-    <link rel="stylesheet" href="styles.css">
+    <!-- Product page styles -->
+    <link rel="stylesheet" href="product.css?v=1">
 </head>
 
 <body>
 
-    <!-- NAVIGATION -->
-    <header class="navbar">
-        <div class="logo">THE QUIET HORSE</div>
-        <nav>
-            <a href="index.html">HOME</a>
-            <a href="gallery.html">GALLERY</a>
-            <a href="sale.html">SALE</a>
-            <a href="downloads.html">DOWNLOADS</a>
-            <a href="about.html">ABOUT</a>
-            <a href="contact.html">CONTACT</a>
-        </nav>
-    </header>
+    <!-- RANCH GATE HEADER -->
+    <header class="ranch-gate">
 
-    <!-- PAGE HEADER -->
-    <section class="page-header">
-        <h1>Art Print</h1>
-        <p>High‑quality Western artwork — printed with care.</p>
-    </section>
+        <!-- LEFT POST -->
+        <div class="gate-post left-post"></div>
 
-    <!-- PRODUCT SECTION -->
-    <section class="product-page">
-
-        <div class="product-image">
-            <img src="images/Sundown Companion.jpg" alt="Art Print">
+        <!-- TOP BEAM WITH HANGING NAV -->
+        <div class="gate-beam">
+            <nav class="hanging-nav">
+                <a href="index.html" class="hang-plank">Home</a>
+                <a href="gallery.html" class="hang-plank">Gallery</a>
+                <a href="books.html" class="hang-plank">Books</a>
+                <a href="sale.html" class="hang-plank">Store</a>
+                <a href="contact.html" class="hang-plank">Contact</a>
+            </nav>
         </div>
 
-        <div class="product-details">
-            <h2>Sundown Companion</h2>
-            <p class="price">$40.00</p>
+        <!-- RIGHT POST -->
+        <div class="gate-post right-post"></div>
 
-            <p class="description">
-                A quiet moment at the edge of the day — charcoal and pencil capturing the warmth of a loyal companion 
-                under a fading sky. Printed on premium archival paper for long‑lasting quality.
+    </header>
+
+    <!-- PRODUCT SECTION -->
+    <section class="product-container">
+
+        <!-- PRODUCT IMAGE -->
+        <div class="product-image-box">
+            <img src="images/Campfire Wisdom.jpg" alt="Campfire Wisdom">
+        </div>
+
+        <!-- PRODUCT DETAILS -->
+        <div class="product-details">
+            <h2>Campfire Wisdom</h2>
+            <p class="product-description">
+                A charcoal Western print capturing a quiet moment by the fire —  
+                a lone cowboy sharing stories with the night sky.  
+                Hand‑drawn by Daniel McKegan.
             </p>
 
-            <ul class="product-info">
-                <li>• Printed on 11x14 premium matte stock</li>
-                <li>• Archival quality — 100+ year longevity</li>
-                <li>• Hand‑signed by the artist</li>
-                <li>• Ships flat, protected, and ready to frame</li>
+            <p class="product-price">
+                <span class="old-price">$40</span>
+                <span class="sale-price">$20</span>
+            </p>
+
+            <a href="https://buy.stripe.com/test_123456789" class="btn">Buy Now</a>
+
+            <h3>Print Details</h3>
+            <ul class="product-specs">
+                <li>8×10 high‑resolution print</li>
+                <li>Charcoal & pencil artwork</li>
+                <li>Matte finish for a rustic look</li>
+                <li>Ships flat in protective packaging</li>
             </ul>
-
-            <button class="btn add-to-cart">Add to Cart</button>
-
-            <div class="product-links">
-                <a href="refund.html">Refund Policy</a> • 
-                <a href="shipping.html">Shipping Info</a> • 
-                <a href="terms.html">Terms</a>
-            </div>
         </div>
 
     </section>
 
     <!-- FOOTER -->
     <footer>
-        <p>© 2026 The Quiet Horse – Western Art & Stories</p>
+        <p>&copy; 2026 Cactus Ranch – Western Art & Stories</p>
     </footer>
 
 </body>
