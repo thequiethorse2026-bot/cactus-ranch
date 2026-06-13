@@ -3,52 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Books – Cactus Ranch</title>
+    <title>Books by Daniel McKegan</title>
 
-    <!-- Version‑locked CSS -->
-    <link rel="stylesheet" href="styles.css?v=2">
+    <!-- Main site styles -->
+    <link rel="stylesheet" href="styles.css?v=4">
+
+    <!-- Books page styles -->
+    <link rel="stylesheet" href="books.css?v=1">
 </head>
 
 <body>
 
-    <!-- SUBPAGE HEADER -->
-    <header class="subpage-header">
-        <h1>Western Books</h1>
-        <p>Stories from the frontier — written by Daniel McKegan</p>
+    <!-- RANCH GATE HEADER -->
+    <header class="ranch-gate">
 
-        <nav class="sub-nav">
-            <a href="index.html">Home</a>
-            <a href="gallery.html">Gallery</a>
-            <a href="sale.html">Store</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <!-- LEFT POST -->
+        <div class="gate-post left-post"></div>
+
+        <!-- TOP BEAM WITH HANGING NAV -->
+        <div class="gate-beam">
+            <nav class="hanging-nav">
+                <a href="index.html" class="hang-plank">Home</a>
+                <a href="gallery.html" class="hang-plank">Gallery</a>
+                <a href="sale.html" class="hang-plank">Store</a>
+                <a href="contact.html" class="hang-plank">Contact</a>
+            </nav>
+        </div>
+
+        <!-- RIGHT POST -->
+        <div class="gate-post right-post"></div>
+
     </header>
 
-    <!-- BOOK LIST SECTION -->
-    <section class="gallery-grid">
+    <!-- PAGE HEADER -->
+    <section class="welcome">
+        <h2>Books by Daniel McKegan</h2>
+        <p>Western fiction written with grit, heart, and frontier justice.</p>
+    </section>
+
+    <!-- BOOK GRID -->
+    <section class="book-grid">
 
         <!-- BOOK 1 -->
-        <div class="art-card">
-            <img src="images/books.jpg?v=1" alt="Bring Her Back Book Cover">
+        <div class="book-card">
+            <img src="images/bring-her-back.jpg" alt="Bring Her Back">
             <h3>Bring Her Back</h3>
-            <p>Book One of The Troubleshooter Series</p>
+            <p class="series-label">The Troubleshooter Series – Book One</p>
+            <a href="bring-her-back.html" class="btn">View Book</a>
         </div>
 
         <!-- BOOK 2 -->
-        <div class="art-card">
-            <img src="images/books.jpg?v=1" alt="Basin Stand-Off Book Cover">
+        <div class="book-card">
+            <img src="images/basin-stand-off.jpg" alt="Basin Stand-Off">
             <h3>Basin Stand-Off</h3>
-            <p>A Western short novel set in the Qaidam Basin</p>
+            <p class="series-label">A Western Short Novel</p>
+            <a href="basin-stand-off.html" class="btn">View Book</a>
         </div>
 
-        <!-- FUTURE BOOKS -->
-        <div class="art-card">
-            <img src="images/books.jpg?v=1" alt="Future Western Books">
-            <h3>More Books Coming Soon</h3>
-            <p>New stories from the Troubleshooter universe are on the way</p>
+        <!-- BOOK 3 -->
+        <div class="book-card">
+            <img src="images/unexpected-treasure.jpg" alt="Unexpected Treasure">
+            <h3>Unexpected Treasure</h3>
+            <p class="series-label">A Frontier Adventure</p>
+            <a href="unexpected-treasure.html" class="btn">View Book</a>
         </div>
 
     </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Cactus Ranch – Western Art & Stories</p>
+    </footer>
 
 </body>
 </html>
