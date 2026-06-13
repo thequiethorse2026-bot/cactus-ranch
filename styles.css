@@ -1,7 +1,4 @@
-/* ============================
-   GLOBAL BASE STYLES
-   ============================ */
-
+/* GLOBAL BASE */
 body {
     margin: 0;
     background: #fdf7ef;
@@ -14,10 +11,7 @@ a {
     color: inherit;
 }
 
-/* ============================
-   RANCH GATE STRUCTURE
-   ============================ */
-
+/* RANCH GATE */
 .ranch-gate {
     position: relative;
     width: 100%;
@@ -28,7 +22,6 @@ a {
     z-index: 10;
 }
 
-/* Rough-cut rustic posts */
 .gate-post {
     width: 90px;
     height: 100%;
@@ -42,7 +35,6 @@ a {
 .left-post { margin-left: 20px; }
 .right-post { margin-right: 20px; }
 
-/* Rough-cut top beam */
 .gate-beam {
     position: absolute;
     top: 0;
@@ -60,7 +52,7 @@ a {
     box-shadow: 0 4px 10px rgba(0,0,0,0.5);
 }
 
-/* Hanging planks */
+/* HANGING NAV */
 .hanging-nav {
     display: flex;
     gap: 40px;
@@ -78,7 +70,6 @@ a {
     transition: transform 0.2s ease-in-out;
 }
 
-/* Rope ties */
 .hang-plank::before,
 .hang-plank::after {
     content: "";
@@ -93,28 +84,21 @@ a {
 .hang-plank::before { left: 20px; }
 .hang-plank::after { right: 20px; }
 
-/* Western sway */
 .hang-plank:hover {
     transform: rotate(-3deg) scale(1.05);
 }
 
-/* ============================
-   HERO IMAGE
-   ============================ */
-
+/* HERO */
 .hero {
     height: 70vh;
     background-image: url('images/dm-ranch-entrance.jpg?v=3');
     background-size: cover;
     background-position: center;
-    margin-top: -40px; /* pulls hero up under the beam */
+    margin-top: -40px;
     z-index: 1;
 }
 
-/* ============================
-   WELCOME SECTION
-   ============================ */
-
+/* WELCOME */
 .welcome {
     padding: 40px;
     text-align: center;
@@ -131,10 +115,7 @@ a {
     margin: auto;
 }
 
-/* ============================
-   CTA BUTTON
-   ============================ */
-
+/* CTA BUTTON */
 .cta-section {
     text-align: center;
     margin: 40px 0;
@@ -162,10 +143,7 @@ a {
     font-size: 1.8rem;
 }
 
-/* ============================
-   UNIVERSAL PAGE SPACING
-   ============================ */
-
+/* UNIVERSAL SPACING */
 section {
     padding-left: 20px;
     padding-right: 20px;
