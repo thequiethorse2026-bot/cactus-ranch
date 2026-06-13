@@ -1,77 +1,152 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery – Cactus Ranch</title>
-    <link rel="stylesheet" href="styles.css?v=3">
-</head>
+/* ================================
+   GLOBAL GALLERY STYLES
+================================ */
 
-<body>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background-color: #f4e9d8;
+    color: #3a2a1a;
+}
 
-    <!-- RANCH GATE HEADER -->
-    <header class="ranch-gate">
+/* ================================
+   PAGE TITLE
+================================ */
 
-        <!-- LEFT POST -->
-        <div class="gate-post left-post"></div>
+.gallery-title {
+    text-align: center;
+    font-size: 42px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: #3a2a1a;
+}
 
-        <!-- TOP BEAM WITH NAV -->
-        <div class="gate-beam">
-            <nav class="hanging-nav">
-                <a href="index.html" class="hang-plank">Home</a>
-                <a href="gallery.html" class="hang-plank">Gallery</a>
-                <a href="books.html" class="hang-plank">Books</a>
-                <a href="sale.html" class="hang-plank">Store</a>
-                <a href="contact.html" class="hang-plank">Contact</a>
-            </nav>
-        </div>
+/* ================================
+   FILTER BUTTONS
+================================ */
 
-        <!-- RIGHT POST -->
-        <div class="gate-post right-post"></div>
+.filter-buttons {
+    text-align: center;
+    margin-bottom: 30px;
+}
 
-    </header>
+.filter-buttons button {
+    background-color: #8b5e34;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 6px;
+    border: 3px solid #3a2a1a;
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #3a2a1a;
+    transition: transform 0.1s ease-in-out;
+}
 
-    <!-- PAGE TITLE -->
-    <section class="welcome">
-        <h2>Art Gallery</h2>
-        <p>Step inside the DM Ranch gallery — where every piece carries dust, grit, and a story from the frontier.</p>
-    </section>
+.filter-buttons button:hover {
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 #3a2a1a;
+}
 
-    <!-- GALLERY GRID -->
-    <section class="gallery-grid">
+/* ================================
+   GALLERY GRID
+================================ */
 
-        <!-- ART ITEM -->
-        <div class="art-item">
-            <img src="images/art1.jpg" alt="Western Artwork 1">
-            <h3>Title of Artwork 1</h3>
-        </div>
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    padding: 20px 40px;
+}
 
-        <div class="art-item">
-            <img src="images/art2.jpg" alt="Western Artwork 2">
-            <h3>Title of Artwork 2</h3>
-        </div>
+/* ================================
+   GALLERY ITEM
+================================ */
 
-        <div class="art-item">
-            <img src="images/art3.jpg" alt="Western Artwork 3">
-            <h3>Title of Artwork 3</h3>
-        </div>
+.gallery-item {
+    background-color: #fff;
+    border: 4px solid #3a2a1a;
+    padding: 10px;
+    box-shadow: 0 6px 0 #3a2a1a;
+    transition: transform 0.15s ease-in-out;
+}
 
-        <div class="art-item">
-            <img src="images/art4.jpg" alt="Western Artwork 4">
-            <h3>Title of Artwork 4</h3>
-        </div>
+.gallery-item:hover {
+    transform: translateY(-6px);
+}
 
-        <div class="art-item">
-            <img src="images/art5.jpg" alt="Western Artwork 5">
-            <h3>Title of Artwork 5</h3>
-        </div>
+/* Image inside item */
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    border: 3px solid #3a2a1a;
+}
 
-        <div class="art-item">
-            <img src="images/art6.jpg" alt="Western Artwork 6">
-            <h3>Title of Artwork 6</h3>
-        </div>
+/* Title */
+.gallery-item h3 {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 20px;
+    color: #3a2a1a;
+}
 
-    </section>
+/* ================================
+   HIDDEN CLASS FOR FILTERING
+================================ */
 
-</body>
-</html>
+.hidden {
+    display: none !important;
+}
+
+/* ================================
+   LIGHTBOX
+================================ */
+
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border: 6px solid #fff;
+    box-shadow: 0 0 20px #000;
+}
+
+.lightbox.active {
+    display: flex;
+}
+
+/* Close button */
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 600px) {
+    .gallery-grid {
+        padding: 10px;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+
+    .gallery-item h3 {
+        font-size: 18px;
+    }
+}
