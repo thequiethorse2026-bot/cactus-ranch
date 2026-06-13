@@ -1,150 +1,97 @@
-/* GLOBAL BASE */
-body {
-    margin: 0;
-    background: #fdf7ef;
-    color: #2b1a10;
-    font-family: Georgia, serif;
+/* ============================
+   RESPONSIVE BREAKPOINTS
+   ============================ */
+
+/* Tablets and small laptops */
+@media (max-width: 1024px) {
+
+    .gate-post {
+        width: 70px;
+    }
+
+    .gate-beam {
+        left: 90px;
+        right: 90px;
+        height: 75px;
+    }
+
+    .hang-plank {
+        padding: 14px 28px;
+        font-size: 1.2rem;
+    }
+
+    .hanging-nav {
+        gap: 25px;
+    }
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
+/* Large phones and small tablets */
+@media (max-width: 768px) {
+
+    .gate-post {
+        width: 55px;
+    }
+
+    .gate-beam {
+        left: 70px;
+        right: 70px;
+        height: 65px;
+        padding-bottom: 6px;
+    }
+
+    .hang-plank {
+        padding: 12px 22px;
+        font-size: 1rem;
+    }
+
+    .hanging-nav {
+        gap: 18px;
+    }
+
+    .hero {
+        height: 50vh;
+        margin-top: -20px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
 }
 
-/* RANCH GATE */
-.ranch-gate {
-    position: relative;
-    width: 100%;
-    height: 220px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    z-index: 10;
-}
+/* Phones */
+@media (max-width: 480px) {
 
-.gate-post {
-    width: 90px;
-    height: 100%;
-    background-image: url('images/rough-post.jpg');
-    background-size: cover;
-    background-position: center;
-    border: 4px solid #3a2a1a;
-    box-shadow: 0 0 10px rgba(0,0,0,0.4);
-}
+    .ranch-gate {
+        height: 160px;
+    }
 
-.left-post { margin-left: 20px; }
-.right-post { margin-right: 20px; }
+    .gate-post {
+        width: 45px;
+    }
 
-.gate-beam {
-    position: absolute;
-    top: 0;
-    left: 110px;
-    right: 110px;
-    height: 90px;
-    background-image: url('images/rough-beam.jpg');
-    background-size: cover;
-    background-position: center;
-    border: 4px solid #3a2a1a;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    padding-bottom: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
-}
+    .gate-beam {
+        left: 55px;
+        right: 55px;
+        height: 55px;
+    }
 
-/* HANGING NAV */
-.hanging-nav {
-    display: flex;
-    gap: 40px;
-}
+    .hang-plank {
+        padding: 10px 16px;
+        font-size: 0.9rem;
+    }
 
-.hang-plank {
-    background: #5a3a1e;
-    padding: 18px 40px;
-    border: 3px solid #3a2a1a;
-    border-radius: 6px;
-    color: #f5e6c8;
-    font-size: 1.4rem;
-    text-shadow: 2px 2px 4px #000;
-    position: relative;
-    transition: transform 0.2s ease-in-out;
-}
+    .hanging-nav {
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-.hang-plank::before,
-.hang-plank::after {
-    content: "";
-    width: 4px;
-    height: 30px;
-    background: #d2b48c;
-    position: absolute;
-    top: -30px;
-    border-radius: 2px;
-}
+    .hero {
+        height: 40vh;
+        margin-top: -10px;
+    }
 
-.hang-plank::before { left: 20px; }
-.hang-plank::after { right: 20px; }
-
-.hang-plank:hover {
-    transform: rotate(-3deg) scale(1.05);
-}
-
-/* HERO */
-.hero {
-    height: 70vh;
-    background-image: url('images/dm-ranch-entrance.jpg?v=3');
-    background-size: cover;
-    background-position: center;
-    margin-top: -40px;
-    z-index: 1;
-}
-
-/* WELCOME */
-.welcome {
-    padding: 40px;
-    text-align: center;
-}
-
-.welcome h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.welcome p {
-    font-size: 1.2rem;
-    max-width: 800px;
-    margin: auto;
-}
-
-/* CTA BUTTON */
-.cta-section {
-    text-align: center;
-    margin: 40px 0;
-}
-
-.cta-button {
-    background: #5a3a1e;
-    color: #f5e6c8;
-    padding: 18px 40px;
-    font-size: 1.6rem;
-    border: 4px solid #3a2a1a;
-    border-radius: 8px;
-    text-shadow: 2px 2px 4px #000;
-    transition: transform 0.2s ease-in-out, background 0.2s;
-    display: inline-block;
-}
-
-.cta-button:hover {
-    background: #704a28;
-    transform: scale(1.05);
-}
-
-.cta-button .icon {
-    margin-right: 10px;
-    font-size: 1.8rem;
-}
-
-/* UNIVERSAL SPACING */
-section {
-    padding-left: 20px;
-    padding-right: 20px;
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
 }
