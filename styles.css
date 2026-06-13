@@ -192,3 +192,29 @@ footer {
     color: #f5e6c8;
     margin-top: 40px;
 }
+/* ============================
+   CALL‑TO‑ACTION BUTTON
+   ============================ */
+
+.cta-section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.cta-button {
+    background: #5a3a1e;
+    color: #f5e6c8;
+    padding: 18px 40px;
+    font-size: 1.6rem;
+    border: 4px solid #3a2a1a;
+    border-radius: 8px;
+    text-shadow: 2px 2px 4px #000;
+    font-family: Georgia, serif;
+    transition: transform 0.2s ease-in-out, background 0.2s;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background: #704a28;
+    transform: scale(1.05);
+}
