@@ -1,119 +1,137 @@
 /* ================================
-   GLOBAL PAGE STYLING
+   GLOBAL STYLES
 ================================ */
 
-body.store-body {
-  margin: 0;
-  font-family: "Georgia", serif;
-  background: #2b1c12; /* fallback color */
-  color: #f5e3c8;      /* warm parchment */
-}
-
-.store-room {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 40px 20px 60px;
-
-  /* NEW: Log cabin background image */
-  background-image: url("images/cactus-ranch-trading-post.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  /* Slight dark overlay for readability */
-  background-color: rgba(0, 0, 0, 0.45);
-  background-blend-mode: multiply;
-
-  border-radius: 12px;
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, serif;
+    background-color: #f4e9d8;
+    color: #3a2a1a;
 }
 
 /* ================================
-   WOODEN HEADER SIGN
+   RANCH GATE HEADER
 ================================ */
 
-.store-header {
-  text-align: center;
-  margin-bottom: 40px;
+.ranch-gate {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    padding-top: 40px;
+    margin-bottom: 20px;
 }
 
-.header-sign {
-  display: inline-block;
-  padding: 20px 40px;
-  background: #5a3a22; /* wood tone */
-  border: 4px solid #3b2415;
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
-  transform: rotate(-1deg);
+/* Gate Posts */
+.gate-post {
+    width: 40px;
+    height: 250px;
+    background-color: #5a3b1e;
+    border: 4px solid #3a2a1a;
 }
 
-.header-sign h1 {
-  margin: 0;
-  font-size: 2.4rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  text-shadow: 0 0 6px rgba(255, 200, 120, 0.4); /* slight glow */
+.left-post {
+    margin-right: 40px;
 }
 
-.header-subtitle {
-  margin-top: 8px;
-  font-size: 0.95rem;
-  letter-spacing: 0.12em;
-  opacity: 0.9;
+.right-post {
+    margin-left: 40px;
+}
+
+/* Top Beam */
+.gate-beam {
+    position: absolute;
+    top: 0;
+    width: 300px;
+    height: 40px;
+    background-color: #5a3b1e;
+    border: 4px solid #3a2a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* ================================
-   HANGING BUTTON BOARD
+   HANGING NAVIGATION
 ================================ */
 
-.button-board {
-  margin-bottom: 50px;
-  padding: 25px;
-  background: #3b2415;
-  border: 3px solid #26160d;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.7);
-  transform: rotate(0.5deg);
+.hanging-nav {
+    display: flex;
+    gap: 20px;
 }
 
-.board-title {
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  font-size: 1rem;
+.hang-plank {
+    background-color: #8b5e34;
+    color: #fff;
+    padding: 10px 18px;
+    border: 3px solid #3a2a1a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 6px 0 #3a2a1a;
+    transition: transform 0.1s ease-in-out;
 }
 
-/* Rows of wooden buttons */
-.button-row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin-bottom: 16px;
+.hang-plank:hover {
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 #3a2a1a;
 }
 
 /* ================================
-   WOODEN BUTTONS
+   HERO SECTION
 ================================ */
 
-.wood-button {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  padding: 12px 18px;
-  background: #6b4527; /* wood plank */
-  border: 2px solid #3b2415;
-  color: #f5e3c8;
-  text-decoration: none;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  font-size: 0.85rem;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-  transform: rotate(-1.5deg);
-  transition: transform 0.15s ease, box-shadow 0.15s ease,
-              background 0.15s ease;
+.hero {
+    width: 100%;
+    display: block;
 }
 
-.wood-button:hover {
-  background: #7c5230;
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.9);
-  transform: rotate(0deg) translate
+/* ================================
+   WELCOME SECTION
+================================ */
+
+.welcome {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.welcome h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 20px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ================================
+   CTA BUTTON
+================================ */
+
+.cta-section {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.cta-button {
+    background-color: #8b5e34;
+    color: #fff;
+    padding: 14px 26px;
+    font-size: 22px;
+    text-decoration: none;
+    border: 3px solid #3a2a1a;
+    box-shadow: 0 6px 0 #3a2a1a;
+    transition: transform 0.1s ease-in-out;
+}
+
+.cta-button:hover {
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 #3a2a1a;
+}
+
+.icon {
+    margin-right: 8px;
+}
