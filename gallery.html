@@ -1,152 +1,123 @@
-/* ================================
-   GLOBAL GALLERY STYLES
-================================ */
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cactus Ranch Gallery</title>
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Georgia, serif;
-    background-color: #f4e9d8;
-    color: #3a2a1a;
-}
+    <!-- Main site styles -->
+    <link rel="stylesheet" href="styles.css?v=4">
 
-/* ================================
-   PAGE TITLE
-================================ */
+    <!-- Gallery-specific styles -->
+    <link rel="stylesheet" href="gallery.css?v=1">
+</head>
 
-.gallery-title {
-    text-align: center;
-    font-size: 42px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: #3a2a1a;
-}
+<body>
 
-/* ================================
-   FILTER BUTTONS
-================================ */
+    <!-- RANCH GATE HEADER -->
+    <header class="ranch-gate">
 
-.filter-buttons {
-    text-align: center;
-    margin-bottom: 30px;
-}
+        <!-- LEFT POST -->
+        <div class="gate-post left-post"></div>
 
-.filter-buttons button {
-    background-color: #8b5e34;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 6px;
-    border: 3px solid #3a2a1a;
-    font-size: 18px;
-    cursor: pointer;
-    box-shadow: 0 6px 0 #3a2a1a;
-    transition: transform 0.1s ease-in-out;
-}
+        <!-- TOP BEAM WITH HANGING NAV -->
+        <div class="gate-beam">
+            <nav class="hanging-nav">
+                <a href="index.html" class="hang-plank">Home</a>
+                <a href="books.html" class="hang-plank">Books</a>
+                <a href="sale.html" class="hang-plank">Store</a>
+                <a href="contact.html" class="hang-plank">Contact</a>
+            </nav>
+        </div>
 
-.filter-buttons button:hover {
-    transform: translateY(3px);
-    box-shadow: 0 3px 0 #3a2a1a;
-}
+        <!-- RIGHT POST -->
+        <div class="gate-post right-post"></div>
 
-/* ================================
-   GALLERY GRID
-================================ */
+    </header>
 
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-    gap: 20px;
-    padding: 20px 40px;
-}
+    <!-- PAGE TITLE -->
+    <h1 class="gallery-title">Cactus Ranch Art Gallery</h1>
 
-/* ================================
-   GALLERY ITEM
-================================ */
+    <!-- FILTER BUTTONS -->
+    <div class="filter-buttons">
+        <button data-filter="all">All</button>
+        <button data-filter="horses">Horses</button>
+        <button data-filter="landscapes">Landscapes</button>
+        <button data-filter="portraits">Portraits</button>
+    </div>
 
-.gallery-item {
-    background-color: #fff;
-    border: 4px solid #3a2a1a;
-    padding: 10px;
-    box-shadow: 0 6px 0 #3a2a1a;
-    transition: transform 0.15s ease-in-out;
-}
+    <!-- GALLERY GRID -->
+    <div class="gallery-grid">
 
-.gallery-item:hover {
-    transform: translateY(-6px);
-}
+        <!-- ITEM 1 -->
+        <div class="gallery-item horses">
+            <img src="images/mustang-sunset.jpg" alt="Mustang Sunset">
+            <h3>Mustang Sunset</h3>
+        </div>
 
-/* Image inside item */
-.gallery-item img {
-    width: 100%;
-    height: auto;
-    border: 3px solid #3a2a1a;
-}
+        <!-- ITEM 2 -->
+        <div class="gallery-item landscapes">
+            <img src="images/desert-ridge.jpg" alt="Desert Ridge">
+            <h3>Desert Ridge</h3>
+        </div>
 
-/* Title */
-.gallery-item h3 {
-    text-align: center;
-    margin-top: 10px;
-    font-size: 20px;
-    color: #3a2a1a;
-}
+        <!-- ITEM 3 -->
+        <div class="gallery-item portraits">
+            <img src="images/cowboy-portrait.jpg" alt="Cowboy Portrait">
+            <h3>Cowboy Portrait</h3>
+        </div>
 
-/* ================================
-   HIDDEN CLASS FOR FILTERING
-================================ */
+        <!-- ITEM 4 -->
+        <div class="gallery-item horses">
+            <img src="images/wild-stallion.jpg" alt="Wild Stallion">
+            <h3>Wild Stallion</h3>
+        </div>
 
-.hidden {
-    display: none !important;
-}
+    </div>
 
-/* ================================
-   LIGHTBOX
-================================ */
+    <!-- LIGHTBOX -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <img id="lightbox-img" src="" alt="">
+    </div>
 
-.lightbox {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0,0,0,0.85);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
-}
+    <!-- GALLERY SCRIPT -->
+    <script>
+        // Filtering
+        const buttons = document.querySelectorAll(".filter-buttons button");
+        const items = document.querySelectorAll(".gallery-item");
 
-.lightbox img {
-    max-width: 90%;
-    max-height: 90%;
-    border: 6px solid #fff;
-    box-shadow: 0 0 20px #000;
-}
+        buttons.forEach(btn => {
+            btn.addEventListener("click", () => {
+                const filter = btn.getAttribute("data-filter");
 
-.lightbox.active {
-    display: flex;
-}
+                items.forEach(item => {
+                    if (filter === "all" || item.classList.contains(filter)) {
+                        item.classList.remove("hidden");
+                    } else {
+                        item.classList.add("hidden");
+                    }
+                });
+            });
+        });
 
-/* Close button */
-.lightbox-close {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    font-size: 40px;
-    color: #fff;
-    cursor: pointer;
-}
+        // Lightbox
+        const lightbox = document.getElementById("lightbox");
+        const lightboxImg = document.getElementById("lightbox-img");
+        const closeBtn = document.getElementById("lightbox-close");
 
-/* ================================
-   RESPONSIVE
-================================ */
+        items.forEach(item => {
+            item.addEventListener("click", () => {
+                const imgSrc = item.querySelector("img").src;
+                lightboxImg.src = imgSrc;
+                lightbox.classList.add("active");
+            });
+        });
 
-@media (max-width: 600px) {
-    .gallery-grid {
-        padding: 10px;
-        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-    }
+        closeBtn.addEventListener("click", () => {
+            lightbox.classList.remove("active");
+        });
+    </script>
 
-    .gallery-item h3 {
-        font-size: 18px;
-    }
-}
+</body>
+</html>
