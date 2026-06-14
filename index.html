@@ -1,61 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cactus Ranch Gallery</title>
-    <link rel="stylesheet" href="styles.css?v=4">
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cactus Ranch Gallery</title>
 
+<link rel="stylesheet" href="styles.css">
+
+<style>
+    body {
+        margin: 0;
+        background-color: #2b1a12;
+        font-family: Georgia, serif;
+        color: #f8e4c0;
+    }
+
+    /* HERO IMAGE */
+    .hero {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .hero img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    /* LIVE BUTTON BAR */
+    .nav-buttons {
+        position: absolute;
+        top: 40px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .nav-btn {
+        background: #5a3a1a;
+        color: #f8e4c0;
+        padding: 12px 24px;
+        text-decoration: none;
+        border: 2px solid #3a2412;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+        transition: transform 0.2s, background 0.2s;
+        font-size: 20px;
+    }
+
+    .nav-btn:hover {
+        transform: scale(1.08);
+        background: #704a26;
+    }
+
+    /* WELCOME TEXT */
+    .welcome {
+        text-align: center;
+        padding: 40px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    .welcome h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        color: #ffddaa;
+    }
+
+    .welcome p {
+        font-size: 22px;
+        line-height: 1.5;
+    }
+
+    /* ENTER GALLERY BUTTON */
+    .enter-btn {
+        display: inline-block;
+        margin-top: 20px;
+        background: #3d6b3d;
+        padding: 14px 28px;
+        color: #fff7e0;
+        text-decoration: none;
+        font-size: 22px;
+        border-radius: 6px;
+        border: 2px solid #2a4a2a;
+        transition: transform 0.2s;
+    }
+
+    .enter-btn:hover {
+        transform: scale(1.07);
+    }
+</style>
+
+</head>
 <body>
 
-    <!-- RANCH GATE HEADER -->
-    <header class="ranch-gate">
+<!-- HERO IMAGE WITH LIVE BUTTONS -->
+<div class="hero">
+    <img src="home.jpg" alt="Cactus Ranch Homepage">
 
-        <!-- LEFT POST -->
-        <div class="gate-post left-post"></div>
+    <div class="nav-buttons">
+        <a href="gallery.html" class="nav-btn">Gallery</a>
+        <a href="books.html" class="nav-btn">Books</a>
+        <a href="store.html" class="nav-btn">Store</a>
+        <a href="contact.html" class="nav-btn">Contact</a>
+    </div>
+</div>
 
-        <!-- TOP BEAM WITH HANGING NAV -->
-        <div class="gate-beam">
-            <nav class="hanging-nav">
-                <a href="gallery.html" class="hang-plank">Gallery</a>
-                <a href="books.html" class="hang-plank">Books</a>
-                <a href="sale.html" class="hang-plank">Store</a>
-                <a href="contact.html" class="hang-plank">Contact</a>
-            </nav>
-        </div>
+<!-- WELCOME SECTION -->
+<div class="welcome">
+    <h1>Welcome to the Cactus Ranch</h1>
+    <p>
+        Step through the DM Ranch gates and into a world of Western stories, frontier art,
+        and the spirit of the open range. Explore the gallery, read the tales, and ride along
+        with the legends of the West.
+    </p>
 
-        <!-- RIGHT POST -->
-        <div class="gate-post right-post"></div>
-
-    </header>
-
-    <!-- HERO SECTION WITH GATE IMAGE -->
-    <section class="hero" style="
-        background-image: url('images/dm-ranch-entrance.jpg');
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 70vh;
-        border-bottom: 4px solid #5a3b1e;
-    ">
-    </section>
-
-    <!-- WELCOME SECTION -->
-    <section class="welcome">
-        <h2>Welcome to the Cactus Ranch</h2>
-        <p>
-            Step through the DM Ranch gates and into a world of Western stories, rugged landscapes,
-            and frontier artwork. Every piece here is crafted with grit, heart, and the spirit of the open range.
-        </p>
-    </section>
-
-    <!-- CTA BUTTON -->
-    <section class="cta-section">
-        <a href="gallery.html" class="cta-button">
-            <span class="icon">🌵</span> Enter the Gallery
-        </a>
-    </section>
+    <a href="gallery.html" class="enter-btn">🌵 Enter the Gallery</a>
+</div>
 
 </body>
 </html>
