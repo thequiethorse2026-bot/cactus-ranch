@@ -1,87 +1,155 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact – Cactus Ranch</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact – Cactus Ranch</title>
 
-    <!-- Main site styles -->
-    <link rel="stylesheet" href="styles.css?v=4">
+<link rel="stylesheet" href="styles.css">
 
-    <!-- Contact page styles -->
-    <link rel="stylesheet" href="contact.css?v=1">
+<style>
+    body {
+        margin: 0;
+        background-color: #2b1a12;
+        font-family: Georgia, serif;
+        color: #f8e4c0;
+    }
+
+    /* HEADER */
+    .header {
+        text-align: center;
+        padding: 40px 20px;
+    }
+
+    .header h1 {
+        font-size: 48px;
+        margin-bottom: 10px;
+        color: #ffddaa;
+    }
+
+    .header p {
+        font-size: 20px;
+        max-width: 800px;
+        margin: auto;
+        line-height: 1.5;
+    }
+
+    /* CONTACT BOX */
+    .contact-box {
+        max-width: 800px;
+        margin: 40px auto;
+        background: #3a2412;
+        padding: 30px;
+        border: 2px solid #5a3a1a;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0,0,0,0.4);
+    }
+
+    .contact-box h2 {
+        margin-top: 0;
+        color: #ffddaa;
+        font-size: 28px;
+    }
+
+    .contact-box p {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+
+    .email {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #ffddaa;
+    }
+
+    /* CONTACT FORM */
+    form {
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    label {
+        font-size: 18px;
+    }
+
+    input, textarea {
+        padding: 12px;
+        font-size: 18px;
+        border: 2px solid #5a3a1a;
+        border-radius: 6px;
+        background: #2b1a12;
+        color: #f8e4c0;
+    }
+
+    button {
+        background: #3d6b3d;
+        padding: 14px;
+        color: #fff7e0;
+        font-size: 20px;
+        border: 2px solid #2a4a2a;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: transform 0.2s;
+    }
+
+    button:hover {
+        transform: scale(1.07);
+    }
+
+    /* BACK BUTTON */
+    .back-btn {
+        display: block;
+        width: fit-content;
+        margin: 40px auto;
+        background: #5a3a1a;
+        padding: 14px 28px;
+        color: #f8e4c0;
+        text-decoration: none;
+        border: 2px solid #3a2412;
+        font-size: 20px;
+        border-radius: 6px;
+        transition: transform 0.2s;
+    }
+
+    .back-btn:hover {
+        transform: scale(1.07);
+    }
+</style>
+
 </head>
-
 <body>
 
-    <!-- RANCH GATE HEADER -->
-    <header class="ranch-gate">
+<div class="header">
+    <h1>Contact the Cactus Ranch</h1>
+    <p>
+        Got a question about artwork, books, orders, or the DM Ranch?  
+        Send a message anytime — I’ll get back to you as soon as I’m off the trail.
+    </p>
+</div>
 
-        <!-- LEFT POST -->
-        <div class="gate-post left-post"></div>
+<div class="contact-box">
+    <h2>Email</h2>
+    <p>You can reach me directly at:</p>
+    <p class="email">thequiethorse2026@gmail.com</p>
 
-        <!-- TOP BEAM WITH HANGING NAV -->
-        <div class="gate-beam">
-            <nav class="hanging-nav">
-                <a href="index.html" class="hang-plank">Home</a>
-                <a href="gallery.html" class="hang-plank">Gallery</a>
-                <a href="books.html" class="hang-plank">Books</a>
-                <a href="sale.html" class="hang-plank">Store</a>
-            </nav>
-        </div>
+    <form>
+        <label>Your Name</label>
+        <input type="text" placeholder="Your name">
 
-        <!-- RIGHT POST -->
-        <div class="gate-post right-post"></div>
+        <label>Your Email</label>
+        <input type="email" placeholder="your-email@example.com">
 
-    </header>
+        <label>Your Message</label>
+        <textarea rows="6" placeholder="Write your message here..."></textarea>
 
-    <!-- PAGE HEADER -->
-    <section class="welcome">
-        <h2>Contact the Cactus Ranch</h2>
-        <p>Have a question, commission request, or message for Daniel McKegan?  
-        Reach out anytime — the ranch gate is always open.</p>
-    </section>
+        <button type="submit">Send Message</button>
+    </form>
+</div>
 
-    <!-- CONTACT FORM -->
-    <section class="contact-container">
-
-        <div class="contact-box">
-            <h3>Send a Message</h3>
-
-            <form action="https://formspree.io/f/mwkggkqg" method="POST">
-
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="6" required></textarea>
-
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-
-        <div class="contact-info">
-            <h3>Direct Email</h3>
-            <p>You can also reach Daniel directly at:</p>
-
-            <p class="email-display">thequiethorse2026@gmail.com</p>
-
-            <h3>Business Hours</h3>
-            <p>Monday – Friday<br>9 AM – 5 PM (Central Time)</p>
-
-            <h3>Social</h3>
-            <p>Coming soon — Western art updates, book releases, and more.</p>
-        </div>
-
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Cactus Ranch – Western Art & Stories</p>
-    </footer>
+<a href="index.html" class="back-btn">⬅ Return to Home</a>
 
 </body>
 </html>
