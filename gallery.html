@@ -33,7 +33,13 @@
         line-height: 1.5;
     }
 
-    /* GALLERY GRID */
+    h2 {
+        text-align: center;
+        margin-top: 40px;
+        font-size: 32px;
+        color: #ffddaa;
+    }
+
     .gallery-grid {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -65,7 +71,6 @@
         color: #ffddaa;
     }
 
-    /* BACK BUTTON */
     .back-btn {
         display: block;
         width: fit-content;
@@ -92,37 +97,33 @@
     <h1>Cactus Ranch Art Gallery</h1>
     <p>
         Explore the frontier through original Western artwork — mustangs, sunsets, ranch life,
-        and the legends of the open range. Each piece is crafted in your signature Western style.
+        storms, legends, and the spirit of the open range.
     </p>
 </div>
 
-<!-- GALLERY GRID -->
+<!-- CATEGORY: MUSTANGS -->
+<h2>Mustangs</h2>
 <div class="gallery-grid">
-
-    <!-- Example items — replace filenames with your real images -->
     <div class="gallery-item">
         <img src="mustang-sunset.jpg" alt="Mustang Sunset">
         <h3>Mustang Sunset</h3>
     </div>
+</div>
 
+<!-- CATEGORY: RANCH LIFE -->
+<h2>Ranch Life</h2>
+<div class="gallery-grid">
     <div class="gallery-item">
         <img src="ranch-gate.jpg" alt="Ranch Gate">
         <h3>Ranch Gate</h3>
     </div>
 
     <div class="gallery-item">
-        <img src="desert-trail.jpg" alt="Desert Trail">
-        <h3>Desert Trail</h3>
-    </div>
-
-    <div class="gallery-item">
         <img src="campfire-night.jpg" alt="Campfire Night">
         <h3>Campfire Night</h3>
     </div>
-
 </div>
 
-<a href="index.html" class="back-btn">⬅ Return to Home</a>
-
-</body>
-</html>
+<!-- CATEGORY: TRAILS -->
+<h2>Trails</h2>
+<div class="gallery-grid">
