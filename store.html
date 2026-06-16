@@ -2,87 +2,67 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>McKegan Trading Post</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cactus Ranch Trading Post</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="store-body">
+<body>
 
-  <!-- Store Room Wrapper -->
-  <div class="store-room">
+  <!-- CLICKABLE BANNER -->
+  <header id="top-banner">
+    <a href="index.html" class="banner-link">
+      <img src="images/cactus-ranch-trading-post.jpg" alt="Cactus Ranch Trading Post Banner" class="banner-img">
+    </a>
+  </header>
 
-    <!-- ============================
-         WOODEN HEADER SIGN
-    ============================= -->
-    <header class="store-header">
-      <div class="header-sign">
-        <h1>McKegan Trading Post</h1>
-        <p class="header-subtitle">Western Art • Stories • Prints</p>
-      </div>
-    </header>
+  <main id="store-wrapper">
 
-    <!-- ============================
-         HANGING BUTTON BOARD
-    ============================= -->
-    <section class="button-board">
-      <h2 class="board-title">Browse the Trading Post</h2>
+    <h1 class="store-title">Cactus Ranch Trading Post</h1>
 
-      <!-- Top Row -->
-      <div class="button-row">
-        <a href="#silhouettes" class="wood-button">
-          <span class="button-icon">🐎</span>
-          <span class="button-text">Western Silhouette Series</span>
-        </a>
+    <p class="store-intro">
+      Welcome to the Trading Post — your stop for Western prints, stories, and frontier‑inspired artwork.
+      Every piece is crafted by <strong>Daniel McKegan</strong> and delivered with the grit and heart of the American West.
+    </p>
 
-        <a href="#neon" class="wood-button">
-          <span class="button-icon">⚡</span>
-          <span class="button-text">Neon Western Prints</span>
-        </a>
+    <!-- STORE GRID -->
+    <section class="store-grid">
 
-        <a href="#patterns" class="wood-button">
-          <span class="button-icon">◆</span>
-          <span class="button-text">Western Pattern Prints</span>
-        </a>
-
-        <a href="#minimalist" class="wood-button">
-          <span class="button-icon">🌵</span>
-          <span class="button-text">Minimalist Western Art</span>
-        </a>
+      <!-- PRODUCT 1 -->
+      <div class="store-item">
+        <img src="images/daniel-mckeegan-mustang-sunset.jpg" alt="Mustang Sunset Print">
+        <h3 class="store-item-title">Mustang Sunset Print</h3>
+        <p class="store-item-desc">A bold Western silhouette capturing the spirit of the open range.</p>
+        <a href="product.html" class="store-button">View Details</a>
       </div>
 
-      <!-- Bottom Row -->
-      <div class="button-row">
-        <a href="#abstract-mustang" class="wood-button">
-          <span class="button-icon">🔥</span>
-          <span class="button-text">Abstract Mustang Series</span>
-        </a>
-
-        <a href="#vintage-posters" class="wood-button">
-          <span class="button-icon">⭐</span>
-          <span class="button-text">Vintage Western Posters</span>
-        </a>
-
-        <a href="#wildlife" class="wood-button">
-          <span class="button-icon">🦬</span>
-          <span class="button-text">Western Wildlife Prints</span>
-        </a>
+      <!-- PRODUCT 2 -->
+      <div class="store-item">
+        <img src="images/Sundown Companion.jpg" alt="Sundown Companion Print">
+        <h3 class="store-item-title">Sundown Companion</h3>
+        <p class="store-item-desc">Warm tones and quiet moments from the edge of the frontier.</p>
+        <a href="product.html" class="store-button">View Details</a>
       </div>
+
+      <!-- PRODUCT 3 -->
+      <div class="store-item">
+        <img src="images/Touch of the Wild.jpg" alt="Touch of the Wild Print">
+        <h3 class="store-item-title">Touch of the Wild</h3>
+        <p class="store-item-desc">A rugged, untamed portrait of life beyond the fences.</p>
+        <a href="product.html" class="store-button">View Details</a>
+      </div>
+
+      <!-- PRODUCT 4 -->
+      <div class="store-item">
+        <img src="images/Mistwalker’s Companion.jpg" alt="Mistwalker’s Companion Print">
+        <h3 class="store-item-title">Mistwalker’s Companion</h3>
+        <p class="store-item-desc">Soft light, deep shadows, and the mystery of the canyon trails.</p>
+        <a href="product.html" class="store-button">View Details</a>
+      </div>
+
     </section>
 
-    <!-- ============================
-         FEATURED PRODUCT FRAME
-    ============================= -->
-    <section class="featured-frame">
-      <h2>Featured Print of the Month</h2>
-
-      <div class="featured-inner">
-        <!-- Replace with your real image path -->
-        <img src="images/daniel-mckegan-mustang-sunset.jpg"
-             alt="Mustang Sunset by Daniel McKegan">
-      </div>
-    </section>
-
-  </div>
+  </main>
 
 </body>
 </html>
