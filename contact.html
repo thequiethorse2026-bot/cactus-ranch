@@ -1,141 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact – Cactus Ranch</title>
-
-<link rel="stylesheet" href="styles.css">
-
-<style>
-    body {
-        margin: 0;
-        background-color: #2b1a12;
-        font-family: Georgia, serif;
-        color: #f8e4c0;
-    }
-
-    /* HEADER */
-    .header {
-        text-align: center;
-        padding: 40px 20px;
-    }
-
-    .header h1 {
-        font-size: 48px;
-        margin-bottom: 10px;
-        color: #ffddaa;
-    }
-
-    .header p {
-        font-size: 20px;
-        max-width: 800px;
-        margin: auto;
-        line-height: 1.5;
-    }
-
-    /* CONTACT BOX */
-    .contact-box {
-        max-width: 800px;
-        margin: 40px auto;
-        background: #3a2412;
-        padding: 30px;
-        border: 2px solid #5a3a1a;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.4);
-    }
-
-    .contact-box h2 {
-        margin-top: 0;
-        color: #ffddaa;
-        font-size: 28px;
-    }
-
-    .contact-box p {
-        font-size: 20px;
-        line-height: 1.5;
-    }
-
-    .email {
-        font-size: 24px;
-        font-weight: bold;
-        margin-top: 10px;
-        color: #ffddaa;
-    }
-
-    /* CONTACT FORM */
-    form {
-        margin-top: 30px;
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    label {
-        font-size: 18px;
-    }
-
-    input, textarea {
-        padding: 12px;
-        font-size: 18px;
-        border: 2px solid #5a3a1a;
-        border-radius: 6px;
-        background: #2b1a12;
-        color: #f8e4c0;
-    }
-
-    button {
-        background: #3d6b3d;
-        padding: 14px;
-        color: #fff7e0;
-        font-size: 20px;
-        border: 2px solid #2a4a2a;
-        border-radius: 6px;
-        cursor: pointer;
-        transition: transform 0.2s;
-    }
-
-    button:hover {
-        transform: scale(1.07);
-    }
-
-    /* BACK BUTTON */
-    .back-btn {
-        display: block;
-        width: fit-content;
-        margin: 40px auto;
-        background: #5a3a1a;
-        padding: 14px 28px;
-        color: #f8e4c0;
-        text-decoration: none;
-        border: 2px solid #3a2412;
-        font-size: 20px;
-        border-radius: 6px;
-        transition: transform 0.2s;
-    }
-
-    .back-btn:hover {
-        transform: scale(1.07);
-    }
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact – Cactus Ranch</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="header">
-    <h1>Contact the Cactus Ranch</h1>
-    <p>
-        Got a question about artwork, books, orders, or the DM Ranch?  
-        Send a message anytime — I’ll get back to you as soon as I’m off the trail.
-    </p>
-</div>
+  <!-- CLICKABLE BANNER -->
+  <header id="top-banner">
+    <a href="index.html" class="banner-link">
+      <img src="images/cactus-ranch-trading-post.jpg" alt="Cactus Ranch Banner" class="banner-img">
+    </a>
+  </header>
 
-<div class="contact-box">
-    <h2>Email</h2>
-    <p>You can reach me directly at:</p>
-    <p class="email">thequiethorse2026@gmail.com</p>
+  <main id="contact-wrapper">
 
-    <form>
+    <h1 class="contact-title">Contact</h1>
+
+    <section id="contact-info">
+      <p>
+        If you’ve got questions about artwork, prints, books, or anything else from the ranch, you can reach me anytime at:
+      </p>
+
+      <p class="contact-email"><strong>thequiethorse2026@gmail.com</strong></p>
+
+      <p>
+        I usually reply within <strong>24–48 hours</strong>. If I’m out sketching or on the trail, it might take a little longer — but I always answer.
+      </p>
+    </section>
+
+    <section id="contact-form-section">
+      <h2 class="form-title">Send a Message</h2>
+
+      <form id="contact-form">
         <label>Your Name</label>
         <input type="text" placeholder="Your name">
 
@@ -145,11 +45,11 @@
         <label>Your Message</label>
         <textarea rows="6" placeholder="Write your message here..."></textarea>
 
-        <button type="submit">Send Message</button>
-    </form>
-</div>
+        <button type="submit" class="form-button">Send Message</button>
+      </form>
+    </section>
 
-<a href="index.html" class="back-btn">⬅ Return to Home</a>
+  </main>
 
 </body>
 </html>
