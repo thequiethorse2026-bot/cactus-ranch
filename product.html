@@ -1,80 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Details – Cactus Ranch</title>
-
-    <!-- Main site styles -->
-    <link rel="stylesheet" href="styles.css?v=4">
-
-    <!-- Product page styles -->
-    <link rel="stylesheet" href="product.css?v=1">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cactus Ranch Trading Post</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- RANCH GATE HEADER -->
-    <header class="ranch-gate">
+  <!-- CLICKABLE BANNER -->
+  <header id="top-banner">
+    <a href="index.html" class="banner-link">
+      <img src="images/cactus-ranch-trading-post.jpg" alt="Cactus Ranch Trading Post Banner" class="banner-img">
+    </a>
+  </header>
 
-        <!-- LEFT POST -->
-        <div class="gate-post left-post"></div>
+  <main id="store-wrapper">
 
-        <!-- TOP BEAM WITH HANGING NAV -->
-        <div class="gate-beam">
-            <nav class="hanging-nav">
-                <a href="index.html" class="hang-plank">Home</a>
-                <a href="gallery.html" class="hang-plank">Gallery</a>
-                <a href="books.html" class="hang-plank">Books</a>
-                <a href="sale.html" class="hang-plank">Store</a>
-                <a href="contact.html" class="hang-plank">Contact</a>
-            </nav>
-        </div>
+    <h1 class="store-title">Cactus Ranch Trading Post</h1>
 
-        <!-- RIGHT POST -->
-        <div class="gate-post right-post"></div>
+    <p class="store-intro">
+      Western prints, frontier stories, and artwork by <strong>Daniel McKegan</strong>.  
+      Every piece is crafted with the grit, dust, and heart of the American West.
+    </p>
 
-    </header>
+    <!-- STORE GRID -->
+    <section class="store-grid">
 
-    <!-- PRODUCT SECTION -->
-    <section class="product-container">
+      <!-- PRODUCT 1 -->
+      <div class="store-item">
+        <img src="images/daniel-mckeegan-mustang-sunset.jpg" alt="Mustang Sunset Print">
+        <h3 class="store-item-title">Mustang Sunset</h3>
+        <p class="store-item-desc">A bold silhouette of a wild mustang against a burning sky.</p>
+        <a href="product.html" class="store-button">View Details</a>
+      </div>
 
-        <!-- PRODUCT IMAGE -->
-        <div class="product-image-box">
-            <img src="images/Campfire Wisdom.jpg" alt="Campfire Wisdom">
-        </div>
+      <!-- PRODUCT 2 -->
+      <div class="store-item">
+        <img src="images/Sundown Companion.jpg" alt="Sundown Companion Print">
+        <h3 class="store-item-title">Sundown Companion</h3>
+        <p class="store-item-desc">Warm tones and a quiet Western moment at dusk.</p>
+        <a href="product.html" class="store-button">View Details</a>
+      </div>
 
-        <!-- PRODUCT DETAILS -->
-        <div class="product-details">
-            <h2>Campfire Wisdom</h2>
-            <p class="product-description">
-                A charcoal Western print capturing a quiet moment by the fire —  
-                a lone cowboy sharing stories with the night sky.  
-                Hand‑drawn by Daniel McKegan.
-            </p>
+      <!-- PRODUCT 3 -->
+      <div class="store-item">
+        <img src="images/Touch of the Wild.jpg" alt="Touch of the Wild Print">
+        <h3 class="store-item-title">Touch of the Wild</h3>
+        <p class="store-item-desc">A rugged portrait of untamed frontier life.</p>
+        <a href="product.html" class="store-button">View Details</a>
+      </div>
 
-            <p class="product-price">
-                <span class="old-price">$40</span>
-                <span class="sale-price">$20</span>
-            </p>
+      <!-- PRODUCT 4 -->
+      <div class="store-item">
+        <img src="images/Mistwalker’s Companion.jpg" alt="Mistwalker’s Companion Print">
+        <h3 class="store-item-title">Mistwalker’s Companion</h3>
+        <p class="store-item-desc">Soft light and canyon mystery in a single frame.</p>
+        <a href="product.html" class="store-button">View Details</a>
+      </div>
 
-            <a href="https://buy.stripe.com/test_123456789" class="btn">Buy Now</a>
+      <!-- PRODUCT 5 -->
+      <div class="store-item">
+        <img src="images/stormborn guardians.jpg" alt="Stormborn Guardians Print">
+        <h3 class="store-item-title">Stormborn Guardians</h3>
+        <p class="store-item-desc">A dramatic Western scene forged in thunder and grit.</p>
+        <a href="product.html" class="store-button">View Details</a>
+      </div>
 
-            <h3>Print Details</h3>
-            <ul class="product-specs">
-                <li>8×10 high‑resolution print</li>
-                <li>Charcoal & pencil artwork</li>
-                <li>Matte finish for a rustic look</li>
-                <li>Ships flat in protective packaging</li>
-            </ul>
-        </div>
+      <!-- PRODUCT 6 -->
+      <div class="store-item">
+        <img src="images/trail-watcher-dawn.jpg" alt="Trail Watcher Dawn Print">
+        <h3 class="store-item-title">Trail Watcher Dawn</h3>
+        <p class="store-item-desc">A lone figure watching the sunrise over the open range.</p>
+        <a href="product.html" class="store-button">View Details</a>
+      </div>
+
+      <!-- PRODUCT 7 -->
+      <div class="store-item">
+        <img src="images/Daughter of the Canyon Light.jpg" alt="Daughter of the Canyon Light Print">
+        <h3 class="store-item-title">Daughter of the Canyon Light</h3>
+        <p class="store-item-desc">A powerful Western portrait bathed in canyon glow.</p>
+        <a href="product.html" class="store-button">View Details</a>
+      </div>
+
+      <!-- PRODUCT 8 -->
+      <div class="store-item">
+        <img src="images/Hold Fast in the Storm.jpg" alt="Hold Fast in the Storm Print">
+        <h3 class="store-item-title">Hold Fast in the Storm</h3>
+        <p class="store-item-desc">Strength and resolve in the heart of a frontier storm.</p>
+        <a href="product.html" class="store-button">View Details</a>
+      </div>
 
     </section>
 
-    <!-- FOOTER -->
-    <footer>
-        <p>&copy; 2026 Cactus Ranch – Western Art & Stories</p>
-    </footer>
+  </main>
 
 </body>
 </html>
