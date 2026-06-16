@@ -1,138 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About – Cactus Ranch Gallery</title>
-
-<link rel="stylesheet" href="styles.css">
-
-<style>
-    body {
-        margin: 0;
-        background-color: #2b1a12;
-        font-family: Georgia, serif;
-        color: #f8e4c0;
-    }
-
-    /* HEADER */
-    .header {
-        text-align: center;
-        padding: 40px 20px;
-    }
-
-    .header h1 {
-        font-size: 48px;
-        margin-bottom: 10px;
-        color: #ffddaa;
-    }
-
-    .header p {
-        font-size: 20px;
-        max-width: 900px;
-        margin: auto;
-        line-height: 1.5;
-    }
-
-    /* ABOUT BOX */
-    .about-box {
-        max-width: 1000px;
-        margin: 40px auto;
-        background: #3a2412;
-        padding: 30px;
-        border: 2px solid #5a3a1a;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0,0,0,0.4);
-        line-height: 1.6;
-        font-size: 20px;
-    }
-
-    .about-box h2 {
-        color: #ffddaa;
-        margin-top: 30px;
-        font-size: 28px;
-    }
-
-    /* IMAGE */
-    .about-img {
-        width: 100%;
-        max-width: 700px;
-        display: block;
-        margin: 30px auto;
-        border-radius: 6px;
-        border: 2px solid #2b1a12;
-    }
-
-    /* BACK BUTTON */
-    .back-btn {
-        display: block;
-        width: fit-content;
-        margin: 40px auto;
-        background: #5a3a1a;
-        padding: 14px 28px;
-        color: #f8e4c0;
-        text-decoration: none;
-        border: 2px solid #3a2412;
-        font-size: 20px;
-        border-radius: 6px;
-        transition: transform 0.2s;
-    }
-
-    .back-btn:hover {
-        transform: scale(1.07);
-    }
-</style>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Daniel McKagan</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="header">
-    <h1>About the Artist</h1>
-    <p>
-        The Cactus Ranch is the home of Western art, frontier storytelling, and the grit of the open range.
-        Every piece here is created by hand, shaped by memory, and rooted in the spirit of the American West.
-    </p>
-</div>
+  <!-- CLICKABLE BANNER -->
+  <header id="top-banner">
+    <a href="index.html" class="banner-link">
+      <img src="images/cactus-ranch-trading-post.jpg" alt="Cactus Ranch Banner" class="banner-img">
+    </a>
+  </header>
 
-<div class="about-box">
+  <main id="about-wrapper">
 
-    <h2>Daniel McKegan</h2>
-    <p>
-        I’m Daniel McKegan — artist, storyteller, and creator of the Cactus Ranch Gallery.
-        My work blends charcoal, pencil, and digital brushwork to capture the dust, danger,
-        and quiet beauty of the frontier.  
-        Whether it’s a lone mustang at sunset or a gunslinger facing down trouble,
-        I aim to bring the West back to life one scene at a time.
-    </p>
+    <h1 class="about-title">About Daniel McKagan</h1>
 
-    <!-- REQUIRED IMAGE -->
-    <img src="daniel-mckegan-mustang-sunset.jpg" alt="Mustang Sunset by Daniel McKegan" class="about-img">
+    <section id="about-content">
 
-    <h2>The Mission</h2>
-    <p>
-        The goal of the Cactus Ranch is simple:  
-        create Western art and stories worth someone’s hard‑earned money — especially in tough times.
-        Every book, every print, every sketch is made with care, honesty, and respect for the people
-        who still believe in the old ways.
-    </p>
+      <div class="about-image-box">
+        <img src="images/daniel-mckeegan-mustang-sunset.jpg" alt="Mustang Sunset by Daniel McKagan" class="about-image">
+      </div>
 
-    <h2>The Stories</h2>
-    <p>
-        I write the <em>Troubleshooter Series</em>, following Neal Doleson through a world of
-        frontier justice, dusty trails, and hard choices.  
-        More books are on the way, and each one aims to be bigger, sharper, and worth every penny.
-    </p>
+      <div class="about-text">
+        <p>
+          My name is <strong>Daniel McKagan</strong>, and Cactus Ranch is where I bring Western stories, artwork, and frontier grit to life. 
+          From mustang silhouettes to campfire tales, everything here is built with the same spirit that shaped the old American West.
+        </p>
 
-    <h2>The Art</h2>
-    <p>
-        My preferred style is charcoal and pencil — raw, gritty, and honest.  
-        Every piece is meant to feel like it could’ve been pulled straight from a saddlebag
-        after a long ride across the basin.
-    </p>
+        <p>
+          I create Western art in charcoal, pencil, and digital mediums, blending realism with the rugged atmosphere of the frontier. 
+          My stories follow characters who walk the hard trails — men and women shaped by dust, danger, and the quiet moments that define a life.
+        </p>
 
-</div>
+        <p>
+          Whether you're here for the gallery, the books, or the Trading Post, I hope you find something that speaks to your own love of the West.
+        </p>
 
-<a href="index.html" class="back-btn">⬅ Return to Home</a>
+        <a href="gallery.html" class="about-button">Visit the Gallery</a>
+      </div>
+
+    </section>
+
+  </main>
 
 </body>
 </html>
