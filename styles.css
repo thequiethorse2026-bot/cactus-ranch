@@ -10,21 +10,22 @@ body {
 .hero {
     position: relative;
     width: 100%;
-    height: 70vh;
-    overflow: hidden;
+    background: #000; /* prevents white behind image */
 }
 
 .hero img {
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    height: auto;          /* ensures full image shows */
+    object-fit: contain;   /* NO cropping */
+    display: block;
 }
 
+/* HERO TEXT */
 .hero-text {
     position: absolute;
     bottom: 20px;
     left: 40px;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.45);
     padding: 20px;
     color: #fff;
     border-left: 4px solid #d4a15a;
@@ -46,34 +47,11 @@ body {
     text-align: center;
 }
 
-/* GALLERY PAGE */
-.page-title {
-    text-align: center;
-    margin-top: 30px;
-}
-
-.gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
-    padding: 40px;
-}
-
-.gallery-item img {
-    width: 100%;
-    border: 4px solid #d4a15a;
-}
-
-.gallery-item h3 {
-    text-align: center;
-    margin-top: 10px;
-}
-
-/* CLICKABLE HOTSPOT FOR CACTUS SIGN */
+/* CLICKABLE HOTSPOT */
 .gallery-hotspot {
     position: absolute;
-    right: 40px;   /* adjust if needed */
-    bottom: 120px; /* adjust if needed */
+    right: 40px;
+    bottom: 120px;
     width: 120px;
     height: 80px;
 }
