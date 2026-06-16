@@ -1,69 +1,85 @@
-/* STORE PAGE */
-#store-wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+/* GLOBAL */
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f4efe6;
+    color: #3a2c1a;
 }
 
-.store-title {
-  text-align: center;
-  font-size: 2.4rem;
-  color: #5a3b1e;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
+/* HERO SECTION */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    overflow: hidden;
 }
 
-.store-intro {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #4a2e1a;
-  margin-bottom: 40px;
-  line-height: 1.6;
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.store-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
+.hero-text {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    background: rgba(0,0,0,0.4);
+    padding: 20px;
+    color: #fff;
+    border-left: 4px solid #d4a15a;
 }
 
-.store-item {
-  background: #f7e7c9;
-  border: 4px solid #8b5a2b;
-  border-radius: 6px;
-  padding: 15px;
-  text-align: center;
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #d4a15a;
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.store-item img {
-  width: 100%;
-  border-radius: 4px;
-  margin-bottom: 10px;
+/* INTRO SECTION */
+.intro {
+    padding: 40px;
+    text-align: center;
 }
 
-.store-item-title {
-  font-size: 1.3rem;
-  color: #4a2e1a;
-  margin-bottom: 8px;
+/* GALLERY PAGE */
+.page-title {
+    text-align: center;
+    margin-top: 30px;
 }
 
-.store-item-desc {
-  font-size: 1rem;
-  color: #4a2e1a;
-  margin-bottom: 15px;
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 40px;
 }
 
-.store-button {
-  display: inline-block;
-  padding: 10px 16px;
-  background: #8b5a2b;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: transform 0.25s ease, filter 0.25s ease;
+.gallery-item img {
+    width: 100%;
+    border: 4px solid #d4a15a;
 }
 
-.store-button:hover {
-  transform: scale(1.05);
-  filter: brightness(1.15);
+.gallery-item h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* CLICKABLE HOTSPOT FOR CACTUS SIGN */
+.gallery-hotspot {
+    position: absolute;
+    right: 40px;   /* adjust if needed */
+    bottom: 120px; /* adjust if needed */
+    width: 120px;
+    height: 80px;
+}
+
+.gallery-hotspot a {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
